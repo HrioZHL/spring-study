@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="com.hrio.pojo.User">
+        <property name="name" value="Hrio"/>
+    </bean>
+
+    <!--IOC创建容器的方式：下标、类型、参数名，具体使用方法看官方文档-->
+    <!--别名-->
+    <alias name="user" alias="hahahah"/>
+    <!--bean的配置
+        id:bean的唯一标识符，相当于对象名
+        class:bean的全限定名
+        name:别名，可以同时取多个别名用逗号或空格或分号等隔开
+    -->
+    <!--import：用于合并多个配置文件-->
+</beans>
